@@ -1,0 +1,24 @@
+.courses {
+    border: 1px solid black;
+    padding: 5px;
+}
+.course:first-child{
+    margin-left: 3%;
+}
+.course{
+    display: inline-block;
+    border: 1px solid black;
+    padding: 5px;
+    width: 30%;
+    min-height: 400px;
+    margin-left: 2%;
+}
+.course-width{
+    display: block;
+    border: 1px solid black;
+    padding: 5px;
+    width: 94%;
+    min-height: 250px;
+    margin-top: 1%;
+    margin-left: 3%;
+}
