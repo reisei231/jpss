@@ -5,6 +5,9 @@
 .course:first-child{
     margin-left: 3%;
 }
+.course.first{
+    margin-left: 3%;
+}
 .course{
     display: inline-block;
     border: 1px solid black;

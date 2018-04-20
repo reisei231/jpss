@@ -4,7 +4,6 @@ block content
     .header(style="background-color: #f2f2f2;")
         .container
             .profile
-                p(style="display: inline-block;")= name.first
                 p(style="display: inline-block;")= email
                 a(style="display: inline-block;") Редактировать профиль
                 button(style="display: inline-block;") Выйти
@@ -27,7 +26,7 @@ block content
                     h2 Название курса
                     .course-body
                         span Тело курса
-                .course
+                .course.first
                     h2 Название курса
                     .course-body
                         span Тело курса
