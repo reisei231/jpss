@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var crypto = require('crypto');
 var mongoClient = require("mongodb").MongoClient;
-var url = "mongodb://localhost:27017/";
+var url = "mongodb://admin:40olevuz@ds014578.mlab.com:14578/jpss";
 const key = "jpss";
 /* GET users listing. */
 router.get('/', function(req, res, next) {
@@ -20,6 +20,9 @@ router.post('/', function(req, res, next) {
         console.log(doc._id);
         res.cookie('userid', doc._id.toString());
         res.redirect('../');
+      }
+      else {
+        res.render('login', {msg: "неправильный логин или пароль"});
       }
     })
   });

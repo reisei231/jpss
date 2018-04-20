@@ -2,8 +2,10 @@
     .logo
         a JPSS
     .menu
-        form(action="")
-            button.btn Sign In
-            button.btn Sign Up
-        
+        if authorised
+            span Кнопок нет, т.к авторизован
+        else
+            form(action="")
+                button.btn Авторизация
+                button.btn Регистрация
     

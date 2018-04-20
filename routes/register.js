@@ -3,7 +3,7 @@ var router = express.Router();
 var crypto = require('crypto');
 var mongoClient = require("mongodb").MongoClient;
 const key = 'jpss';
-var url = "mongodb://localhost:27017/";
+var url = "mongodb://admin:40olevuz@ds014578.mlab.com:14578/jpss";
 /* GET users listing. */
 router.get('/', function(req, res, next) {
   res.render('register');
