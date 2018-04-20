@@ -7,8 +7,9 @@ router.get('/', function(req, res, next) {
   if(req.cookies.userid){
     console.log("Куки видны");
     authorised = true;
+    res.render('welcome',{authorised : authorised});
   }
-  res.render('index',{authorised : authorised});
+  res.render('board',{authorised : authorised});
 });
 
 module.exports = router;
