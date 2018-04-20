@@ -1,4 +1,23 @@
 extends layout
 
 block content
-    p Profile Page
+    .container
+        h1 Profile Page
+        form(action="")
+            .form-group.row
+                label.col-sm-2.col-form-label(for='staticEmail') Почта
+                .col-sm-10
+                    input(type="text" readonly class="form-control-plaintext" id="staticEmail" value=email)
+            .form-group.row
+                label.col-sm-2.col-form-label Пароль
+                .col-sm-10
+                    input.form-control(type="password" placeholder="new password")
+            .form-group.row
+                label.col-sm-2.col-form-label Имя
+                .col-sm-10
+                    input.form-control(type="text" placeholder= name.first)
+            .form-group.row
+                label.col-sm-2.col-form-labe Фамилия
+                .col-sm-10
+                    input.form-control(type="text" placeholder= name.last)
+            button.btn.btn-primary(type="submit") Редактировать профиль

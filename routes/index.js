@@ -13,5 +13,4 @@ router.get('/', function(req, res, next) {
   res.render('welcome',{authorised : authorised});
   }
 });
-
 module.exports = router;
