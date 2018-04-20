@@ -23,5 +23,9 @@
     width: 94%;
     min-height: 250px;
     margin-top: 1%;
+    margin-bottom: 1%;
     margin-left: 3%;
+}
+td:hover{
+    background-color: aqua;
 }
