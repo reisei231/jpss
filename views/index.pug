@@ -1,13 +1,20 @@
 extends layout
 
 block content
+  .container-fluid.header
+    .container
+      include ../includes/nav.pug
   .wrapper
     div.container
-      include ../includes/nav.pug
+      
       if authorised
         span  Авторизован
       else
-        span Неавторизован
+        form(action="/register" method="post")
+          .form-group
+            input.form-control(type="email", name="email")
+            input.form-control(type="password", name="password")
+            button.btn.btn-primary(type="submit") Зарегистрироваться 
 
     
     
