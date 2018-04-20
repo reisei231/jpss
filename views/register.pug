@@ -1,3 +1,12 @@
 extends layout
 
+
 block content
+    form(action="", method="post")
+        span Email
+        input(type="email", name="email")
+        span Password
+        input(type="password", name="password")
+        button.btn(type="submit") Зарегистрироваться
+    span= msg
+
