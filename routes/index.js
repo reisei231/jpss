@@ -3,7 +3,12 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  var authorised = false;
+  if(req.cookies.userid){
+    console.log("Куки видны");
+    authorised = true;
+  }
+  res.render('index',{authorised : authorised});
 });
 
 module.exports = router;

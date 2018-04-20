@@ -4,7 +4,10 @@ block content
   .wrapper
     div.container
       include ../includes/nav.pug
-      
+      if authorised
+        span  Авторизован
+      else
+        span Неавторизован
 
     
     
