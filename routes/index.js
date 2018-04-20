@@ -7,7 +7,7 @@ router.get('/', function(req, res, next) {
   if(req.cookies.userid){
     console.log("Куки видны");
     authorised = true;
-    res.render('board',{authorised : authorised});
+    res.redirect('/board');
   }
   res.render('welcome',{authorised : authorised});
 });
