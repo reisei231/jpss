@@ -9,7 +9,9 @@ router.get('/', function(req, res, next) {
     authorised = true;
     res.redirect('/board');
   }
+  else{
   res.render('welcome',{authorised : authorised});
+  }
 });
 
 module.exports = router;

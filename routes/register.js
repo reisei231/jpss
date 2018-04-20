@@ -13,6 +13,7 @@ router.post('/', function(req, res,next) {
   
   mongoClient.connect(url, function(err, db) {
     var collection = db.collection("users");
+    token = crypto.createHmac('sha256', req.body.email).update(hash).digest('hex');
     collection.findOne({email: req.body.email},
       function(err,doc) {
         if(err){
@@ -28,7 +29,7 @@ router.post('/', function(req, res,next) {
         Если пользователя нет - сообщаем о успешной регистрации
         */
        else{
-         collection.insertOne({email: req.body.email, password: hash}, function(err, result){
+         collection.insertOne({email: req.body.email, password: hash, token: token}, function(err, result){
            if(err){
              console.log(err);
            }

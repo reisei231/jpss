@@ -18,7 +18,7 @@ router.post('/', function(req, res, next) {
     collection.findOne({email: req.body.email, password: hash}, function(err, doc){
       if(doc){
         console.log(doc._id);
-        res.cookie('userid', doc._id.toString());
+        res.cookie('userid', doc.token);
         res.redirect('../');
       }
       else {
