@@ -1,8 +1,14 @@
 extends layout
 
 block content
-    .profile
-        p= name.first
-        p= email
-        a(href="../profile") Редактировать профиль
-    button.btn.btn-primary Выйти
+    .header(style="background-color: #f2f2f2;")
+        .container
+            .profile
+                p(style="display: inline-block;")= name.first
+                p(style="display: inline-block;")= email
+                a(style="display: inline-block;") Редактировать профиль
+                button(style="display: inline-block;") Выйти
+    .wrapper(style="background-color: #e5e5e5;min-height: 800px;")
+        .container
+            p Курс
+            p Курс
