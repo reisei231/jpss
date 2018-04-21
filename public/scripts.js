@@ -10,15 +10,11 @@ $("button.continue").click(function(){
     $(this).hide();
     $(".game .card").click(function(){
         $(this).addClass('selected');
-        console.log('Ты нажал на ' + $(this).attr('id'));
         if($.cookie('cardId')){
-            console.log('В куках лежит номер '+ $.cookie('cardId'));
             var cookieId = $.cookie('cardId');
             var selectId = $(this).attr('id');
-            if()
             if(cookieId != selectId) {
                 if((Math.abs(cookieId - selectId)) == 18){
-                    console.log('Угадал');
                     score++;
                     $(".score").html("Cчет : "+score);
                     $("#"+cookieId).css('visibility', 'hidden');
