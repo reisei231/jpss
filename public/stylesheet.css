@@ -1,9 +1,29 @@
 .header{
-    background-color: #218457;
+    background-color: rgb(255, 157, 255);
 }
 .wrapper{
-    background-color: #00B060;
+    background-color: rgb(255, 204, 255);
+    position: relative; bottom: 5px;
 }
 .logo a{
     font-size: 24px;
+}
+.group-form{
+    position: relative; left: 70%;
+    width: 270px;
+}
+.btn1{
+    position: relative; left: 37%;
+}
+.btn2{
+    position: relative; left: 58%;
+}
+.dropdown1{
+    position: relative; left: 82%;
+}
+.place1{
+    margin: 5px;
+}
+.place2{
+    margin: 5px;
 }
