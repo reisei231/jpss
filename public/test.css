@@ -1,0 +1,50 @@
+.courses {
+    border: 1px solid black;
+    padding: 5px;
+}
+.course:first-child{
+    margin-left: 3%;
+}
+.course.first{
+    margin-left: 3%;
+}
+.course{
+    display: inline-block;
+    border: 1px solid black;
+    padding: 5px;
+    width: 30%;
+    min-height: 400px;
+    margin-left: 2%;
+}
+.course-width{
+    display: block;
+    border: 1px solid black;
+    padding: 5px;
+    width: 94%;
+    min-height: 250px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 3%;
+}
+td:hover{
+    background-color: aqua;
+}
+.body .game .card{
+    display: inline-block;
+}
+.game .card{
+    font-size: 64px;
+    text-align: center;
+    margin-left: 5%;
+    margin-bottom: 1%;
+    display: inline-block;
+    border: 1px solid black;
+    height: auto;
+    width: 10%;
+}
+.game .card:hover{
+    background-color: green;
+}
+.selected {
+    background-color: green;
+}
