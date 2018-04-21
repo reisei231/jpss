@@ -12,6 +12,7 @@ var registerRouter = require('./routes/register');
 var boardRouter = require('./routes/board');
 var profileRouter = require('./routes/profile');
 var gamesRouter = require('./routes/games');
+var apiRouter = require('./routes/api');
 var app = express();
 
 // view engine setup
@@ -31,6 +32,7 @@ app.use('/register', registerRouter);
 app.use('/board', boardRouter);
 app.use('/profile', profileRouter);
 app.use('/games', gamesRouter);
+app.use('/api', apiRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
