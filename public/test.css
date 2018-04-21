@@ -29,3 +29,22 @@
 td:hover{
     background-color: aqua;
 }
+.body .game .card{
+    display: inline-block;
+}
+.game .card{
+    font-size: 64px;
+    text-align: center;
+    margin-left: 5%;
+    margin-bottom: 1%;
+    display: inline-block;
+    border: 1px solid black;
+    height: auto;
+    width: 10%;
+}
+.game .card:hover{
+    background-color: green;
+}
+.selected {
+    background-color: green;
+}
